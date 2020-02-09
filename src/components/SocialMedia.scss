@@ -1,0 +1,25 @@
+#social-media-section {
+    padding: 3rem 0;
+    .social-media-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #7C849A;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            svg {
+                margin: 1rem;
+                &:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

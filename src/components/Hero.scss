@@ -1,0 +1,61 @@
+.parallax-outer {
+    margin: 0;
+}
+
+.hero {
+    .hero-parallax {
+
+    }
+    .site-title-container {
+        position: relative;
+        height: 100%;
+        margin: 1rem;
+        .site-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2rem;
+            text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+            h1 {
+                color: white;
+                text-transform: uppercase;
+                text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+            .site-subtitle {
+                color: white;
+                text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+    }
+    .intro-container {
+        transform: translateZ(0); // Parallax fix
+        background-color: rgb(9, 32, 63);
+        position: relative;
+        padding: 5rem 1rem;
+        .text-wrapper {
+            max-width: 750px;
+            margin: 0 auto;
+            h2, p {
+                color: white;
+                text-align: center;
+            }
+            h2 {
+                margin-block-start: 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
+            p {
+                margin: 0;
+                margin-block-end: 1rem;
+            }
+        }
+    }
+}

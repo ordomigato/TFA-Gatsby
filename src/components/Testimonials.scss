@@ -1,0 +1,41 @@
+#testimonial-section {
+    padding: 3rem 0; 
+    .testimonial-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+        margin: 0 auto;
+        article {
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            p {
+                padding: 2rem;
+                background-color: #F9FBFC;
+                margin-block-end: 0;
+            }
+            footer {
+                padding: 0.5em 2rem;
+                color: white;
+                align-self: flex-end;
+                background-color: #7C849A;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #testimonial-section {
+        .testimonial-wrapper {
+            flex-direction: row;
+            article {
+                flex: 1 1 0;
+                p {
+                }
+                footer {
+                }
+            }
+        }
+    }
+ }

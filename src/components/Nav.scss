@@ -1,0 +1,118 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background: white;
+    border: 12px solid white;
+    box-sizing: content-box;
+    button {
+        width: 36px !important;
+        right: 0 !important;
+    }
+  }
+
+/* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    display: inline-block !important;
+    width: 36px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #7C849A;
+    transition-duration: 0.1s;
+  }
+
+  /* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 20px;
+    width: 20px;
+  }
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #646769;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: white;
+    opacity: 0.8;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    overflow-y: hidden;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item, nav .nav-item {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        color: #7C849A;
+    }
+}
+
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.desktop-nav {
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    z-index: 9000;
+    width: 100vw;
+    transform: translateY(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    & .navbar-item {
+        text-transform: uppercase;
+        &:hover {
+            color: #7C849A;
+        }
+        &.active-navbar-item {
+            color: #7C849A;
+        }
+    }
+    &.shadow {
+        box-shadow: 0 3px 6px #70707023;
+        background-color: white;
+    }
+    &.hidden {
+        transform: translateY(-110%);
+    }
+}
+
+@media only screen and (min-width : 1024px) {
+    .bm-burger-button, .bm-menu-wrap, .bm-overlay {
+        visibility: hidden;
+    }
+    .desktop-nav {
+        visibility: visible;
+    }
+}

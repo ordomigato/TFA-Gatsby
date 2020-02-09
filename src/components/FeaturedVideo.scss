@@ -1,0 +1,30 @@
+.frontpage-banner {
+    position: relative;
+    .frontpage-banner-heading-container {
+        transform: translate3d(0, 0, 0); //Parallax fix
+        margin: 0 auto;
+        height: 100%;
+        .frontpage-banner-heading {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h3 {
+                color: white;
+                font-size: 2rem;
+                text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+            }
+        }
+    }
+    .featured-video-container {
+        max-width: 640px !important;
+        max-height: 360px !important;
+        margin: 3rem auto !important;
+        .featured-video-wrapper {
+            iframe {
+            }
+        }
+    }
+}
