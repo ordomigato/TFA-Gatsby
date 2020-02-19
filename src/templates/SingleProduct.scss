@@ -1,0 +1,93 @@
+.single-product-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    .single-product-images {
+
+    }
+    .single-product-content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        .price-tag {
+            .price-wrapper {
+                display: flex;
+                .price, .promo-price {
+                    font-size: 1.5rem;
+                }
+            }
+            &.promo {
+                .price-wrapper {
+                    .price {
+                        margin-right: 1rem;
+                        text-decoration: line-through;
+                    }
+                    .promo-price {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .cta-button {
+            width: 200px;
+            text-align: center;
+            opacity: 1;
+            position: relative;
+            color: black;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 1.2rem;
+            border: 2px solid black;
+            padding: 1rem 2rem;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.6s;
+            &:hover {
+                transition: all 0.6s;
+                cursor: pointer;
+                color: white;
+            }
+            &:before {
+                content: '';
+                z-index: -1;
+                background: rgb(0, 0, 0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.6s ease;
+                width: 100%;
+                height: 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:hover::before {
+                height: 200%;
+                overflow: hidden;
+            }
+            &:active::before {
+                height: 380%;
+                overflow: hidden;
+            }
+        }
+        .product-description {
+            margin-top: 1rem;
+            text-align: justify;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .single-product-section {
+        flex-direction: row;
+        .single-product-images {
+            flex-basis: 50%;
+        }
+        .single-product-content {
+            flex-basis: 50%;
+            padding-left: 2rem;
+        }
+    }
+    
+}

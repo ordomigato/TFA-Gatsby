@@ -1,8 +1,31 @@
 .product-section {
     margin: 0 auto;
     max-width: 1024px;
-    h2 {
+    h1 {
+        text-align: center;;
         font-weight: 400;
         font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    &-notice {
+        text-align: center;
+    }
+    .products {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .product-section {
+        .products {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0rem;
+        }
     }
 }

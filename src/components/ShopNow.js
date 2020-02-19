@@ -1,11 +1,12 @@
 import React from 'react'
 import './ShopNow.scss'
+import { Link } from 'gatsby'
 
 const ShopNow = () => {
     return (
         <section className="frontpage-cta-banner">
             <div className="cta-banner-container">
-                <a className="cta-button">Shop Now</a>
+                <Link to='/shop' className="cta-button">Shop Now</Link>
             </div>
         </section>
     )
