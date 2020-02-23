@@ -11,7 +11,7 @@ const Layout = (props) => {
         <div className="site-container">
             <ThemeContextProvider>
                 <div className="site-main-container">
-                    <Nav />
+                    {/* <Nav /> */}
                     {props.children}
                 </div>
                 <Footer />
