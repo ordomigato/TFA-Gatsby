@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 import './news.scss'
 import Layout from '../components/Layout'
-import NewsList from '../components/NewsList'
+import NewsCard from '../components/NewsCard'
 
 const News = ({data}) => {
     return (
@@ -16,7 +16,7 @@ const News = ({data}) => {
                         <section>
                         {data.allContentfulNews.edges.map(({node}) => (
 
-                            <NewsList article={node} />
+                            <NewsCard article={node} />
 
                         ))}
                         </section>
@@ -37,6 +37,9 @@ export const newsQuery = graphql`
             slug
             createdAt(formatString: "LL")
             title
+            excerpt {
+                excerpt
+            }
             coverImage {
                 fixed(width: 300) {
                     ...GatsbyContentfulFixed

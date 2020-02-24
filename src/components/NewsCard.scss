@@ -1,0 +1,31 @@
+.news-article {
+    display: flex;
+    flex-direction: column;
+    .article-image-container {
+        display: flex;
+        img {
+        }
+    }
+    .article-body-container {
+        padding: 1rem 2rem;
+        header {
+            p {
+                display: inline-block;
+            }
+            p:first-of-type {
+                margin-right: 1rem;
+            }
+        }    
+    } 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .news-article {
+        flex-direction: row;
+        .article-image-container {
+            img {
+            }
+        }
+    }
+}
