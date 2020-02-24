@@ -1,0 +1,12 @@
+.single-news-page-post {
+    width: 1024px;
+    margin: 0 auto;
+    .article-meta {
+        display: flex;
+        .article-author {
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

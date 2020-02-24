@@ -37,7 +37,6 @@ const ProductCard = ({productInfo}) => {
                 </div>
             </Link>
         </article>
-
     )
 }
 

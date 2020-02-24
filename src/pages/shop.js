@@ -17,7 +17,7 @@ const Shop = ({ data }) => {
 
                         {data.allContentfulProducts.edges.map(({ node }) => (
 
-                        <ProductCard productInfo={node} />
+                        <ProductCard productInfo={node} key={node.id}/>
 
                         ))}
 
