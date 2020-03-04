@@ -1,20 +1,37 @@
 .news-article {
     display: flex;
     flex-direction: column;
+    margin: 3rem 1rem;
+    box-shadow: 0 3px 12px #00000020;
     .article-image-container {
         display: flex;
         img {
         }
     }
     .article-body-container {
+        position: relative;
         padding: 1rem 2rem;
         header {
+            .article-title {
+                margin-bottom: 0.8rem;
+            }
             p {
                 display: inline-block;
             }
             p:first-of-type {
                 margin-right: 1rem;
             }
+        }
+        .article-button a {
+            color: white;
+            background-color: #7C849A;
+            padding: 1rem 2rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 2rem;
+            transform: translateY(50%);
+            box-shadow: 0 3px 12px #00000020;
         }    
     } 
 }
@@ -24,6 +41,8 @@
     .news-article {
         flex-direction: row;
         .article-image-container {
+            height: 100%;
+            flex: 1 1 auto;
             img {
             }
         }

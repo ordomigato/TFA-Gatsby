@@ -12,7 +12,7 @@ const NewsCard = ({article}) => {
             <div className="article-image-container">
                 <Img
                     fixed={article.coverImage.fixed}
-                    style={{height: '300px', width: '100%'}}
+                    style={{minHeight: '300px', width: '100%', minWidth: '300px'}}
                 />
             </div>
             <div className="article-body-container">
@@ -21,14 +21,16 @@ const NewsCard = ({article}) => {
                     <p>Posted: {article.createdAt}</p>
                 </header>
                 <TextTruncate 
-                     line={5}
+                     line={4}
                      element="p"
                      truncateText=" …"
                      text={article.excerpt.excerpt}
                     //  textTruncateChild={<a href="#">Read on</a>}
                 />
+                <div className="article-button">
+                    <Link to={`/news/${article.slug}`}>READ MORE</Link>
+                </div>
             </div>
-            <Link to={`/news/${article.slug}`}>Link to Article</Link>
         </article>
     )
 }
