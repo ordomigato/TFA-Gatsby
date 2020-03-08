@@ -44,10 +44,12 @@ const FeaturedVideo = () => {
                     </div>
                 </div>
             </ParallaxBanner>
-            <div className="featured-video-container">
-                <figure className="featured-video-wrapper image is-16by9">
-                    <iframe className="has-ratio" width="1024" height="576" align="middle" src="https://www.youtube.com/embed/0y0DrwDLyZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </figure>
+            <div className="featured-video-section">
+                <div className="featured-video-container">
+                    <figure className="featured-video-wrapper image is-16by9">
+                        <iframe className="has-ratio" width="1024" height="576" align="middle" src="https://www.youtube.com/embed/0y0DrwDLyZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                </div>
             </div>
         </section>
     )

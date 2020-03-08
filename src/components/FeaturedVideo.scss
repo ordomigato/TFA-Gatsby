@@ -18,12 +18,16 @@
             }
         }
     }
-    .featured-video-container {
-        max-width: 640px !important;
-        max-height: 360px !important;
-        margin: 3rem auto !important;
-        .featured-video-wrapper {
-            iframe {
+    .featured-video-section {
+        padding: 2rem 0;
+        .featured-video-container {
+            max-width: 640px !important;
+            max-height: 360px !important;
+            margin: 0rem auto !important;
+            .featured-video-wrapper {
+                margin-bottom: 0;
+                iframe {
+                }
             }
         }
     }

@@ -34,15 +34,17 @@ const SingleNews = (props) => {
     return (
         <Layout>
             <div className="navbar-fix">
-                <section className="single-news-page-post">
-                    <header>
-                        <h1>{props.data.contentfulNews.title}</h1>
-                        <div className="article-meta">
-                            <p className="article-author">Written by: <span>{props.data.contentfulNews.author}</span> |&nbsp;</p>
-                            <p className="article-date">Posted on: {props.data.contentfulNews.createdAt}</p>
-                        </div>
-                    </header>
-                    {documentToReactComponents(props.data.contentfulNews.childContentfulNewsContentRichTextNode.json, options)}
+                <section className="single-news-page-post-container">
+                    <div className="single-news-page-post">
+                        <header>
+                            <h1>{props.data.contentfulNews.title}</h1>
+                            <div className="article-meta">
+                                <p className="article-author">Written by: <span>{props.data.contentfulNews.author}</span> |&nbsp;</p>
+                                <p className="article-date">Posted on: {props.data.contentfulNews.createdAt}</p>
+                            </div>
+                        </header>
+                        {documentToReactComponents(props.data.contentfulNews.childContentfulNewsContentRichTextNode.json, options)}
+                    </div>
                 </section>
             </div>
         </Layout>
