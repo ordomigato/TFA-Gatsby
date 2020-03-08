@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'gatsby'
-import { slide as Menu } from 'react-burger-menu'
+// import { slide as Menu } from 'react-burger-menu'
 import { ThemeContext } from '../context/ThemeContext';
 import useDocumentScrollThrottled from './utils/useDocumentScrollThrottled';
 import './Nav.scss';
@@ -32,7 +32,24 @@ const Nav = () => {
     return (
         <header className="navbar-container">
             {/* MOBILE NAVBAR */}
-            <Menu
+
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler"></input>
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><Link to='/'>Home</Link></li>
+                                <li><Link to='/shop'>Shop</Link></li>
+                                <li><Link to='/news'>News</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <Menu
                 className="menu"
                 right
                 width={ '50vw' }
@@ -49,7 +66,7 @@ const Nav = () => {
                 <Link to='/news' onClick={ctx.toggleMenu}>
                     news
                 </Link>
-            </Menu>
+            </Menu> */}
 
             {/* DESKTOP NAVBAR */}
             <nav className={`navbar desktop-nav ${hiddenStyle} ${shadowStyle}`}>
