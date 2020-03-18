@@ -13,15 +13,16 @@ const ContactPage = () => {
                     <h1>Need to Contact Us?</h1>
                     <p className="contact-page-caption">If you wish to purchase any merchandise with cash, request a custom build, or have any other inquiry, feel free to send us a message</p>
                 </div>
-                <form className="contact-form" name="contact" method="POST" netlify>
+                <form className="contact-form" name="contact" method="POST" data-netlify="true">
                     <div className="contact-dual">
                         <input className="input-field" type="text" name="name" placeholder="Your Name*" />
-                        <input className="input-field" type="text" name="email" placeholder="Your Email" />
+                        <input className="input-field" type="email" name="email" placeholder="Your Email" />
                     </div>
                     <textarea className="input-field" rows="4" name="message" placeholder="Message..."></textarea>
                     <div data-netlify-recaptcha="true"></div>
                     <CoolButton 
                         text="Send"
+                        type="submit"
                     />
                 </form>
             </div>

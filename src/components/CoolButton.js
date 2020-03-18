@@ -2,10 +2,10 @@ import React from 'react'
 
 import './CoolButton.scss'
 
-const CoolButton = ({text}) => {
+const CoolButton = ({text, type}) => {
     return (
         <div className="button-container">
-            <button className="cool-button">
+            <button className="cool-button" type={type}>
                 {text}
             </button>
         </div>
