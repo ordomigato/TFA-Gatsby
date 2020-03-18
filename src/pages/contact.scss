@@ -1,0 +1,32 @@
+.contact-page-header {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    h1 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+.contact-form {
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    .contact-dual {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .input-field {
+        border: 0px;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        box-shadow: 0 3px 6px #00000020;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 63px;
+    }
+}

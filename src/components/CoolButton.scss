@@ -1,0 +1,43 @@
+.button-container {
+    margin: 0 auto;
+    .cool-button {
+        opacity: 1;
+            position: relative;
+            color: black;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 1rem;
+            border: 1px solid black;
+            padding: 1rem 2rem;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.6s;
+            &:hover {
+                transition: color 0.6s;
+                cursor: pointer;
+                color: white;
+            }
+            &:before {
+                content: '';
+                z-index: -1;
+                background: black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.6s ease;
+                width: 200%;
+                height: 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+                
+            }
+            &:hover::before {
+                height: 300%;
+                overflow: hidden;
+
+            }
+            &:active::before {
+                height: 380%;
+                overflow: hidden;
+            }
+    }
+}

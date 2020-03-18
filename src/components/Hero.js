@@ -39,6 +39,7 @@ const Hero = () => {
             >
                 <div className="site-title-container">
                     <div className="site-title">
+                    <div class="text"></div>
                         <h1>
                             <span>Tom</span>
                             <span>Freeman</span>
