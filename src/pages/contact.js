@@ -13,7 +13,7 @@ const ContactPage = () => {
                     <h1>Need to Contact Us?</h1>
                     <p className="contact-page-caption">If you wish to purchase any merchandise with cash, request a custom build, or have any other inquiry, feel free to send us a message</p>
                 </div>
-                <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form className="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                     <input type="hidden" name="bot-field" />
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="contact-dual">
