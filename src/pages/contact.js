@@ -21,7 +21,7 @@ const ContactPage = () => {
                         <input className="input-field" type="email" name="email" placeholder="Your Email" />
                     </div>
                     <textarea className="input-field" rows="4" name="message" placeholder="Message..."></textarea>
-                    <div data-netlify-recaptcha="true" class="recaptcha"></div>
+                    <div data-netlify-recaptcha="true"></div>
                     <CoolButton 
                         text="Send"
                         type="submit"
